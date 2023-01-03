@@ -1,6 +1,9 @@
 from fastapi import APIRouter, HTTPException
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/v1/pruebaTecnica",
+    tags=["items"],
+)
 
 
 @router.get("/searchCharacter/")
